@@ -1,5 +1,5 @@
 # Argo Helm Versioner
-
+[![Go](https://github.com/jhoelzel/argo-helm-versioner/actions/workflows/go.yml/badge.svg)](https://github.com/jhoelzel/argo-helm-versioner/actions/workflows/go.yml)
 ## Overview
 The Argo Helm Versioner is a utility designed to help manage and maintain Argo CD Applications deployed via Helm charts. It automates the process of scanning for Argo CD Application YAML files within a specified directory (and its subdirectories), identifies those that are Helm-based, and checks their currently deployed Helm chart versions against the latest versions available in their respective Helm repositories. The findings are neatly presented in a table, sorted by application name and update status, facilitating easy identification of applications that may require updates.
 
@@ -28,7 +28,7 @@ Follow these steps to set up the Argo Helm Versioner:
 4. **Compile the Tool** (optional): For convenience, you may compile the versioner into an executable:
    ```sh
    go build -o argo-helm-versioner
-   ```
+   ```git 
 
 ## Usage
 The Argo Helm Versioner can be run directly using `go run`, or via the compiled executable if you chose to build it.
